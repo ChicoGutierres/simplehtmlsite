@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site Pessoal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Inclui o menu -->
+    <div id="menu-container"></div>
+
+    <main>
+        <h1>Bem-vindo ao meu site pessoal</h1>
+        <p>Este é o início da minha presença online.</p>
+    </main>
+
+    <script>
+        // Carrega o menu.html dinamicamente
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu-container').innerHTML = data);
+    </script>
+
+</body>
+</html>
